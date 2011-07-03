@@ -1,0 +1,4 @@
+.*
+bin-*
+html-*
+tests/*.mxml
