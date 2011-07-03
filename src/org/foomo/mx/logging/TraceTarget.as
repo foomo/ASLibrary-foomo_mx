@@ -5,7 +5,7 @@ package org.foomo.mx.logging
 	import mx.logging.LogEvent;
 	import mx.logging.targets.LineFormattedTarget;
 
-	import org.foomo.mx.utils.DebugUtils;
+	import org.foomo.flash.utils.DebugUtil;
 
 	use namespace mx_internal;
 
@@ -62,7 +62,7 @@ package org.foomo.mx.logging
 
 			var location:String = "";
 			if (this.includeLocation) {
-				var stackLine:String 	= DebugUtils.getStackTrace(8, 9);
+				var stackLine:String 	= DebugUtil.getStackTrace(8, 9);
 				var locationSplit:int 	= stackLine.indexOf('[');
 				var locationIn:String	= stackLine.substring(locationSplit);
 				location = ' in ' + locationIn.substring(locationIn.indexOf('/src'), (locationIn.length - 2));
