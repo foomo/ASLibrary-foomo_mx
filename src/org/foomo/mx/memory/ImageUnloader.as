@@ -16,12 +16,12 @@
 */
 package org.foomo.mx.memory
 {
-	import flash.display.Bitmap;
-
-	import mx.controls.Image;
+	import flash.utils.getQualifiedClassName;
 
 	import org.foomo.flash.managers.MemoryMananager;
 	import org.foomo.flash.memory.IUnloader;
+
+	[ExcludeClass]
 
 	/**
 	 * @link    http://www.foomo.org
@@ -36,7 +36,7 @@ package org.foomo.mx.memory
 
 		public function unload(object:Object):void
 		{
-			if (Image(object).content is Bitmap) MemoryMananager.unload(object.content);
+			if (getQualifiedClassName(object.content) == 'flash.display::Bitmap') MemoryMananager.unload(object.content);
 		}
 	}
 }

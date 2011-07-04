@@ -16,16 +16,12 @@
 */
 package org.foomo.mx.memory
 {
-	import mx.controls.Image;
-	import mx.controls.SWFLoader;
-	import mx.core.UIComponent;
-
 	import org.foomo.flash.managers.MemoryMananager;
 
 	/**
 	 * This offers a shortcut to add all common unloader
-	 * Note: using this method could mean that you will compile some classes
-	 * into you project you might otherwise wouldn't need. So be aware of this!
+	 * NOTE: I am not using the actual classes as I don't wont to link them into
+	 * the swf if they are not needed
 	 *
 	 * @link    http://www.foomo.org
 	 * @license http://www.gnu.org/licenses/lgpl.txt
@@ -42,9 +38,9 @@ package org.foomo.mx.memory
 		 */
 		public static function addAll():void
 		{
-			MemoryMananager.addUnloader(Image, new ImageUnloader);
-			MemoryMananager.addUnloader(SWFLoader, new SWFLoaderUnloader);
-			MemoryMananager.addUnloader(UIComponent, new UIComponentUnloader);
+			MemoryMananager.addUnloader('mx.controls::Image', new ImageUnloader);
+			MemoryMananager.addUnloader('mx.controls::SWFLoader', new SWFLoaderUnloader);
+			MemoryMananager.addUnloader('mx.core::UIComponent', new UIComponentUnloader);
 		}
 
 		/**
@@ -52,9 +48,9 @@ package org.foomo.mx.memory
 		 */
 		public static function removeAll():void
 		{
-			MemoryMananager.removeUnloader(Image);
-			MemoryMananager.removeUnloader(SWFLoader);
-			MemoryMananager.removeUnloader(UIComponent);
+			MemoryMananager.removeUnloader('mx.controls::Image');
+			MemoryMananager.removeUnloader('mx.controls::SWFLoader');
+			MemoryMananager.removeUnloader('mx.core::UIComponent');
 		}
 	}
 }

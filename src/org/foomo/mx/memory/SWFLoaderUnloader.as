@@ -16,9 +16,9 @@
 */
 package org.foomo.mx.memory
 {
-	import mx.controls.SWFLoader;
-
 	import org.foomo.flash.memory.IUnloader;
+
+	[ExcludeClass]
 
 	/**
 	 * @link    http://www.foomo.org
@@ -33,7 +33,7 @@ package org.foomo.mx.memory
 
 		public function unload(object:Object):void
 		{
-			SWFLoader(object).unloadAndStop();
+			object.unloadAndStop();
 		}
 	}
 }

@@ -16,12 +16,13 @@
 */
 package org.foomo.mx.memory
 {
-	import mx.core.UIComponent;
 	import mx.core.mx_internal;
 
 	import org.foomo.flash.memory.IUnloader;
 
 	use namespace mx_internal;
+
+	[ExcludeClass]
 
 	/**
 	 * @link    http://www.foomo.org
@@ -39,13 +40,12 @@ package org.foomo.mx.memory
 		 */
 		public function unload(object:Object):void
 		{
-			var child:UIComponent = UIComponent(object);
-			child.invalidateDisplayListFlag = false;
-			child.invalidatePropertiesFlag= false;
-			child.invalidateSizeFlag = false;
-			child._documentDescriptor = null;
-			child._descriptor = null;
-			child._document = null;
+			object.invalidateDisplayListFlag = false;
+			object.invalidatePropertiesFlag= false;
+			object.invalidateSizeFlag = false;
+			object._documentDescriptor = null;
+			object._descriptor = null;
+			object._document = null;
 		}
 	}
 }
