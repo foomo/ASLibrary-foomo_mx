@@ -18,8 +18,8 @@ package org.foomo.mx.memory
 {
 	import flash.utils.getQualifiedClassName;
 
-	import org.foomo.flash.managers.MemoryMananager;
-	import org.foomo.flash.memory.IUnloader;
+	import org.foomo.managers.MemoryMananager;
+	import org.foomo.memory.IUnloader;
 
 	[ExcludeClass]
 

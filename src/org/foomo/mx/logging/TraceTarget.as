@@ -5,7 +5,7 @@ package org.foomo.mx.logging
 	import mx.logging.LogEvent;
 	import mx.logging.targets.LineFormattedTarget;
 
-	import org.foomo.flash.utils.DebugUtil;
+	import org.foomo.utils.DebugUtil;
 
 	use namespace mx_internal;
 

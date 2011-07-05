@@ -1,7 +1,6 @@
 package org.foomo.mx.utils
 {
 	import flash.utils.Dictionary;
-	import flash.utils.getQualifiedClassName;
 
 	import mx.collections.ArrayCollection;
 	import mx.logging.ILogger;
@@ -9,7 +8,7 @@ package org.foomo.mx.utils
 	import mx.logging.Log;
 	import mx.logging.targets.TraceTarget;
 
-	import org.foomo.flash.utils.ClassUtil;
+	import org.foomo.utils.ClassUtil;
 
 	/**
 	 * For a better debugging and application checks

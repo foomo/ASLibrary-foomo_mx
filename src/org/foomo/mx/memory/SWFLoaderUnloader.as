@@ -16,7 +16,7 @@
 */
 package org.foomo.mx.memory
 {
-	import org.foomo.flash.memory.IUnloader;
+	import org.foomo.memory.IUnloader;
 
 	[ExcludeClass]
 

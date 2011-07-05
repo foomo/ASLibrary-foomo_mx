@@ -18,7 +18,7 @@ package org.foomo.mx.memory
 {
 	import mx.core.mx_internal;
 
-	import org.foomo.flash.memory.IUnloader;
+	import org.foomo.memory.IUnloader;
 
 	use namespace mx_internal;
 

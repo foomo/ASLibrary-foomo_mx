@@ -16,7 +16,7 @@
 */
 package org.foomo.mx.memory
 {
-	import org.foomo.flash.managers.MemoryMananager;
+	import org.foomo.managers.MemoryMananager;
 
 	/**
 	 * This offers a shortcut to add all common unloader
