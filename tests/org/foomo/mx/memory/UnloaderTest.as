@@ -6,7 +6,7 @@ package org.foomo.mx.memory
 	import mx.controls.SWFLoader;
 	import mx.core.UIComponent;
 
-	import org.foomo.flash.managers.MemoryMananager;
+	import org.foomo.managers.MemoryMananager;
 
 	public class UnloaderTest
 	{
