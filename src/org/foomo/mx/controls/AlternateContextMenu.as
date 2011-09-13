@@ -71,7 +71,7 @@ package org.foomo.mx.controls
 
 		public static function init(stage:Stage, showRoot:Boolean=false):void
 		{
-			AlternateContextMenu._menu = Menu.createMenu(stage, [], showRoot);
+			AlternateContextMenu._menu = Menu.createMenu(null, [], showRoot);
 			AlternateContextMenu._stage = stage;
 			AlternateContextMenu._stage.addEventListener('rightClick', AlternateContextMenu.stage_rightClickHandler);
 		}
